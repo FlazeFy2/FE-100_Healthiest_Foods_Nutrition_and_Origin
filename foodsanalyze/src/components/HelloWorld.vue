@@ -19,19 +19,19 @@
     </div>
     <div class="collapse" id="collapseDescriptiveStats">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mx-auto">
           <M_DescriptiveStatistic target_col="Calories"/>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mx-auto">
           <M_DescriptiveStatistic target_col="Protein (g)"/>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mx-auto">
           <M_DescriptiveStatistic target_col="Fiber (g)"/>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mx-auto">
           <M_DescriptiveStatistic target_col="Vitamin C (mg)"/>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mx-auto">
           <M_DescriptiveStatistic target_col="Antioxidant Score"/>
         </div>
       </div>
