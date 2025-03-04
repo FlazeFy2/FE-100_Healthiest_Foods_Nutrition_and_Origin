@@ -5,6 +5,7 @@
   import { readBody, readHeader } from "@/utils/data_prepare";
   import { onMounted, ref } from "vue";
   import ShowTreeMap from "@/components/usecases/ShowTreeMap.vue"
+  import ShowPieChart from "@/components/usecases/ShowPieChart.vue"
 
   const header_dataset = ref([])
   const body_dataset = ref([])
@@ -100,6 +101,7 @@
       <div class="accordion-item">
         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <A_TextComponent second_title="Pie Chart" />
+          <ShowPieChart/>
         </div>
       </div>
 

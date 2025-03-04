@@ -3,7 +3,6 @@
   import { readCsv } from "@/utils/data_prepare"
   import { countWordFrequencies } from "@/utils/analyze"
   import O_TreeMapComponent from "@/components/organisms/O_TreeMapComponent.vue"
-  import A_TextComponent from "@/components/atoms/A_TextComponent.vue"
   
   const series_qty_tree = ref([])
   const series_originated_from_tree = ref([])
