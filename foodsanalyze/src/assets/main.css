@@ -6,12 +6,55 @@
   font-weight: normal;
 }
 
-a,
-.green {
+a, .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
   padding: 3px;
+}
+
+.accordion-item {
+  border: none !important;
+}
+.accordion-button {
+  font-size: 28px !important;
+  font-weight: bold;
+  color: hsla(160, 100%, 37%, 1) !important;
+  border: 1.5px solid rgba(114, 126, 121, 0.5) !important;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  border-radius: 20px !important;
+}
+.accordion-button:hover {
+  transform: scale(1.025);
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgba(66, 184, 131, 0.25) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  border: 3px solid rgba(66, 184, 131, 0.5) !important;
+  margin-right: 16px !important;
+  margin-bottom: 0 !important;
+  border-radius: 20px 20px 0 0 !important;
+}
+.accordion-button:hover:not(.collapsed) {
+  transform: scale(1.025);
+}
+
+.accordion-item:has(.accordion-collapse.show) {
+  border: 2px solid rgba(66, 184, 131, 0.5) !important;
+  border-radius: 0 20px 20px 20px !important;
+}
+.accordion-item:has(.accordion-collapse.show), .accordion-button {
+  padding: 10px 16px !important;
+}
+.accordion-collapse:not(.show) {
+  border: none;
+}
+.accordion-button {
+  -webkit-transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  transition: all 0.3s !important;
 }
 
 @media (hover: hover) {

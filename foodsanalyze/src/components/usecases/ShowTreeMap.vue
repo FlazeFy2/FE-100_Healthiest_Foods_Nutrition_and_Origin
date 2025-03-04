@@ -42,28 +42,22 @@
 </script>
 
 <template>
-  <div class="d-flex justify-content-between">
-    <A_TextComponent second_title="Tree Map" />
-    <button class="btn btn-link rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreeStats" aria-expanded="false" aria-controls="collapseExample">Show Content</button>
-  </div>
-  <div class="collapse ps-3" id="collapseTreeStats">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
-        <!-- Exploratory Data Analysis (EDA) - Tree Map Top 20 Quantity Comparison -->
-        <O_TreeMapComponent 
-          :series="series_qty_tree" 
-          second_title="Top 20 Quantity Comparison" 
-          content="This show food comparison by its quantity"
-        />
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
-        <!-- Exploratory Data Analysis (EDA) - Tree Map Top 20 Originated From Comparison -->
-        <O_TreeMapComponent 
-          :series="series_originated_from_tree" 
-          second_title="Top 20 Originated From Comparison" 
-          content="This show food comparison by its originated from"
-        />
-      </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
+      <!-- Exploratory Data Analysis (EDA) - Tree Map Top 20 Quantity Comparison -->
+      <O_TreeMapComponent 
+        :series="series_qty_tree" 
+        second_title="Top 20 Quantity Comparison" 
+        content="This show food comparison by its quantity"
+      />
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
+      <!-- Exploratory Data Analysis (EDA) - Tree Map Top 20 Originated From Comparison -->
+      <O_TreeMapComponent 
+        :series="series_originated_from_tree" 
+        second_title="Top 20 Originated From Comparison" 
+        content="This show food comparison by its originated from"
+      />
     </div>
   </div>
 </template>
