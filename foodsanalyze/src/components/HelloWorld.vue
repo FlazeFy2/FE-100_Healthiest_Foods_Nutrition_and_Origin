@@ -6,6 +6,7 @@
   import { onMounted, ref } from "vue";
   import ShowTreeMap from "@/components/usecases/ShowTreeMap.vue"
   import ShowPieChart from "@/components/usecases/ShowPieChart.vue"
+  import ShowColumnChart from "./usecases/ShowColumnChart.vue";
 
   const header_dataset = ref([])
   const body_dataset = ref([])
@@ -108,6 +109,7 @@
       <div class="accordion-item">
         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <A_TextComponent second_title="Column Chart" />
+          <ShowColumnChart/>
         </div>
       </div>
     </div>
